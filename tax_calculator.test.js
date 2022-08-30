@@ -14,7 +14,8 @@ describe('', () => {
     test('should give output even for decimal inputs', () => { 
         expect(taxCalculator(560000.98,200000.55)).toBe(102001)
     })
-    test('call the taxCalculator function without any arguments',() =>{      expect(taxCalculator()).toBe("Please provide both income & savings to calculate your tax")
+    test('call the taxCalculator function without any arguments',() =>{     
+        expect(taxCalculator()).toBe("Please provide both income & savings to calculate your tax")
     })
     test('calling the taxCalculator function with string arguments,but the output is number', () => { 
             expect(taxCalculator("560000","200000")).toBe(102000)
